@@ -63,7 +63,7 @@ export interface Company {
 }
 
 export interface UserData {
-  id?: number; 
+  id?: number; // Optional since the ID is assigned later
   name: string;
   username: string;
   email: string;
@@ -75,5 +75,5 @@ export interface UserData {
 
 export interface UserModalProps {
   onClose: () => void;
-  onSubmit: (user: UserData) => void;
+  onSubmit: (user: UserData) => void; // Add this property to handle user data submission
 }
